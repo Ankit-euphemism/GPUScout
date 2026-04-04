@@ -2,7 +2,7 @@
 
 > Find the best graphics cards under ₹20,000 with live search and smart pricing filters.
 
-![App Screenshot](image/Screenshot%202025-07-12%20200120.png)
+![App Screenshot](image\newvid.png)
 
 ---
 
