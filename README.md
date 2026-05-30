@@ -168,7 +168,3 @@ data/graphic_cards.json
 The `scraper.py` script reads `data/scraping.json`, filters GPUs under ₹20,000, generates descriptions, and writes the cleaned output to `data/graphic_cards.json`. The Flask app then serves this file on every request.
 
 ---
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
