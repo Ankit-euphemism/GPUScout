@@ -2,7 +2,7 @@
 
 GPUScout is a lightweight Flask web app for browsing budget graphics cards under a fixed price ceiling. It combines fast keyword search, a live max-price slider, and a simple JSON-backed data flow to help users compare GPU listings quickly.
 
-## App Image
+## App Working Image
 ![GPUScout](image/image.png)
 
 ## Overview
