@@ -32,7 +32,7 @@ def ScrapeData():
             title = title_elem.text.strip()
             
             # Extract the price from the string and convert to float
-            price = float(price_elem.replace('₹', '').replace(',', '').strip())
+            price = float(str(price_elem).replace('₹', '').replace(',', '').strip())
 
             # Validate the link format
             if not link_elem.startswith("https://www.amazon.in/"):
@@ -70,7 +70,7 @@ def ScrapeData():
             
     except (FileNotFoundError, json.JSONDecodeError):
         print("Error reading scraping data. Returning empty list.")
-        return get_random_item([])
+        return []
     
     
     
