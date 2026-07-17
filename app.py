@@ -4,6 +4,7 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-only-fallback-change-me')
 
 import re
 
@@ -83,4 +84,4 @@ def search():
 
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5000)
+    app.run(debug=os.environ.get('FLASK_DEBUG') == '1', port=5000)
