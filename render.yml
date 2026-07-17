@@ -3,7 +3,7 @@ services:
     name: GPUScout
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --workers 3 --bind 0.0.0.0:8000 --timeout 120
+    startCommand: gunicorn app:app --workers 3 --bind 0.0.0.0:$PORT --timeout 120
     envVars:
       - key: PYTHON_VERSION
         value: 3.14.5
